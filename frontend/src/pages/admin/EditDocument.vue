@@ -37,7 +37,7 @@ const editDocument = async () => {
   const formData = new FormData();
   formData.append("title", newDocument.value.title);
   // @ts-ignore
-  formData.append("year", newDocument.value.year); // Ensure year is a string
+  formData.append("year", newDocument.value.year?.toString); // Ensure year is a string
   if (newDocument.value.document) {
     formData.append("document", newDocument.value.document);
   }

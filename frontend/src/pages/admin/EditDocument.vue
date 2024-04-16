@@ -47,8 +47,6 @@ const editDocument = async () => {
     if (response.status === 200) {
       notificationStore.addNotification({ type: "success", message: "Document created successfully" });
       await router.push('/admin/documents');
-    } else {
-      notificationStore.addNotification({ type: "error", message: `Failed to create document: ${response.data.message}` });
     }
   } catch (error: any) {
     notificationStore.addNotification({ type: "error", message: `Failed to create document: ${error.message}` });

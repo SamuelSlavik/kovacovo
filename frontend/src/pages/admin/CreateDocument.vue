@@ -23,6 +23,7 @@ const submitDocument = async () => {
 
   const formData = new FormData();
   formData.append("title", newDocument.value.title);
+  // @ts-ignore
   formData.append("year", newDocument.value.year); // Ensure year is a string
   formData.append("document", newDocument.value.document); // Append the file
 

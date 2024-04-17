@@ -1,5 +1,5 @@
 export class Endpoints {
-  private static readonly baseUrl = "http://localhost:8000/api";
+  private static readonly baseUrl = "https://kovacovo-backend.vercel.app/api";
 
   // USER / ADMIN --------------------------------------------------------
   static get login(): string {
